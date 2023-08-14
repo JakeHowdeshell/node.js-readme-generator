@@ -63,13 +63,13 @@ inquirer
   ])
   .then(function (data) {
     console.log(JSON.stringify(data));
-    fs.appendFile("README.txt", `${JSON.stringify(data)}\n`, (err) =>
+    fs.appendFile("README.md", `${JSON.stringify(data)}\n`, (err) =>
       err ? console.error(err) : console.log("Commit logged!")
     );
   });
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+//function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 //function init() {}

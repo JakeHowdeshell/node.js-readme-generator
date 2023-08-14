@@ -24,5 +24,4 @@ THEN this is added to the section of the README entitled Questions, with a link 
 WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README{"name":"title","input":"I really. want this to look nice","confirm":true}
-{"name":"jake","input":"skdjv sldv","confirm":true}
+THEN I am taken to the corresponding section of the README
