@@ -112,9 +112,9 @@ ${data.tableOfContents ? `- [Usage](#usage)` : ""}
 
 ${data.tableOfContents ? `- [License](#license)` : ""}
 
-${data.tableOfContents ? `- [Contributing](#contributing)` : ""}
+${data.tableOfContents ? `- [Contributing](#collaborators)` : ""}
 
-${data.tableOfContents ? `- [Tests](#tests)` : ""}
+${data.tableOfContents ? `- [Tests](#test)` : ""}
 
 ${data.tableOfContents ? `- [Questions](#questions)` : ""}
 
