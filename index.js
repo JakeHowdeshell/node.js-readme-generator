@@ -35,8 +35,14 @@ inquirer
     {
       type: "input",
       message:
-        "Provide instructions and examples for how to use your project. Include screenshots as needed.",
+        "Provide instructions and examples for how to use your project.",
       name: "usage",
+    },
+    {
+        type: "input",
+        message:
+          "Provide link to your project screenshot.",
+        name: "screenshot",
     },
     {
       type: "list",
@@ -80,7 +86,7 @@ inquirer
     },
   ])
 
-// took the user input data and appended it to the README file
+// took the user input data and appended it to the README file.
   .then(function (data) {
     const response = writeToFile(data);
     fs.appendFile("README.md", response, (err) =>
@@ -116,8 +122,10 @@ ${data.installation ? `## Installation\n\n${data.installation}\n` : ""}
 
 ${data.usage ? `## Usage\n${data.usage}\n` : ""}
 
-${data.license ? `## License\nThis project is covered under ${data.license}. 
-follow the [link](${link}) for more information regarding this license\n` : "" }
+${data.screenshot ? `![Screenshot](${data.screenshot})` : ""}
+
+${data.license !== "None" ? `## License\nThis project is covered under ${data.license}. 
+follow the link ${link} for more information regarding this license\n` : "" }
 
 ${data.collaborators ? `## Collaborators\n${data.collaborators}\n` : ""}
 
