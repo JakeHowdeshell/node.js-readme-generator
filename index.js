@@ -89,7 +89,7 @@ inquirer
 // took the user input data and appended it to the README file.
   .then(function (data) {
     const response = writeToFile(data);
-    fs.appendFile("README.md", response, (err) =>
+    fs.writeFile("READMEexpl.md", response, (err) =>
       err ? console.error(err) : console.log("Your README file is complete!")
     );
   });
